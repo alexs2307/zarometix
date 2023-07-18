@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+font-family: 'Lato', sans-serif;
+box-sizing: border-box;
+margin:auto;
+padding:auto;
+}
+
+/* NAVBAR */
+.navbar  {
+background-color:rgba(0,0,0,0.8);
+height:100px;
+
+}
+
+.navbar-brand img{
+height:350px;
+width:auto;
+}
+.navbar-dark .navbar-brand {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+
+}
+
+
+.navbar-nav .nav-item .nav-link {
+  color: #333; /* Set the link color */
+  text-decoration: none;
+  font-size: 16px; /* Increase the font size */
+  position: relative;
+  transition: color 0.3s; /* Add transition for smooth color change */
+  text-transform: uppercase;
+
+
+}
+
+.navbar-nav .nav-item .nav-link:after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust the vertical position as needed */
+  right: 0;
+  width: 0; /* Set the initial width to 0 */
+  height: 2px;
+  background-color: gold; /* Set the underline color */
+  transition: width 0.3s, right 0.3s; /* Add transitions for the width and right properties */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ff0000; /* Change the link color on hover */
+}
+
+.navbar-nav .nav-item .nav-link:hover:after {
+  width: 100%; /* Set the width to 100% to match the text width */
+  right: 0; /* Position the underline on the right side */
+  left: auto; /* Reset the left property */
+}
+
+#links a {
+  color: #fff; /* Set the link color to white */
+}
+
+#links a:hover {
+  color: grey; /* Change the link color on hover */
+}
+
+
+@media (max-width: 767px) {
+
+ .navbar-brand img{
+ width:100px;
+ height:auto;
+ }
+.navbar a{
+font-size:13px!important;
+letter-spacing: 1px!important;
+
+}
+.navbar{
+background-color:rgba(0,0,0,0.8);
+height:auto!important;
+
+}
+
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+
+.navbar-nav {
+  text-align: right;
+}
+
+.nav-link {
+  padding: 0.2rem 1rem;
+}
+
+.nav-link.active,
+.nav-link:focus {
+  color: #fff;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 15px;
+  line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
